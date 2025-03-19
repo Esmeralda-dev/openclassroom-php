@@ -81,8 +81,42 @@ else {
        // echo "Désolé, je n'ai pas de message à afficher pour cette note";
 //}
 //?>
-        
+<?php 
+$isEnabled = true;
 
-        
-    </body>
+if ($isEnabled === true){
+    echo "Vous etes autorisé à acceder au site";
+}
+?>
+
+
+<?php
+$note = 5;
+
+switch ($note)
+{
+    case 0:
+        echo "il faudra plus travailler<br/>";
+break;
+
+    case 5:
+        echo"il faut revoir tes cours<br/>";
+break;
+    
+    default:
+        echo"je n ai pas de message a afficher <br/>";
+    
+    
+}
+?>
+<?php
+$ligne = 1;
+
+while  ($ligne <= 100){
+
+    echo "je ne dois pas regarder les mouches volee <br/>";
+    $ligne ++;
+}
+?>
+</body>
 </html>
